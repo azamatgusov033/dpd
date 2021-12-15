@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DPD</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__item_wrapper">
+            <div class="header__item">Акции</div>
+            <div class="header__item">Поиск</div>
+            <div class="header__item">Регистрация</div>
+            <div class="header__item">Личный кабинет</div>
+        </div>
+            <img class="header__item header__logo logo" src="images/logo.png" alt="logo">
+    </header>
+</body>
+<section class="banner"></section>
+<section class="principle">
+    <span class="principle__title">Узнать приблизительную цену доставки</span>
+    <form action="principle__form">
+        <div class="principle__date principle__block">
+            <span class="principle__date__title principle__input__title">Дата</span>
+            <input class="principle__input principle__date_input" type="text" name="principle__date" placeholder="дд.мм.гг">
+        </div>
+        <div class="principle__town principle__block">
+            <span class="principle__town__title principle__input__title">Город</span>
+            <input class=" principle__input principle__town_input" type="text" name="principle__town" placeholder="Город">
+        </div>
+    </form>
+</section>
+<script src="scripts.js"></script>
+</html>
