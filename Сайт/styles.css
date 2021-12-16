@@ -43,7 +43,7 @@ body {
 .slider {
     height: 600px;
     position: relative;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .slider__inner {
@@ -123,6 +123,8 @@ body {
     font-family: Myriad Pro;
     font-size: 48px;
     color: #379ed8;
+    margin-bottom: 33px;
+    display: inline-block;
 }
 .principle__block {
     display: flex;
@@ -131,15 +133,31 @@ body {
     flex-wrap: wrap;
     
 }
-.principle__imput__title {
+.principle__block:not(:last-child) {
+    margin-bottom: 40px;
+}
+.principle__input__title {
     color: #fff;
     font-size: 40px;
+    /* font-size: 60px; */
     font-style: italic;
     font-family: Myriad Pro;
+    margin-right: 33px;
+}
+.principle__input {
+    border-radius: 10px 10px 10px 10px;
+    background: #84ceea;
+    height: 60px;
+    width: 400px;
+    border: none; 
 }
 .principle__input::placeholder {
     color: #379ed8;
-    ont-style: italic;
+    font-style: italic;
     font-family: Myriad Pro;
-    font-size: 18px;
+    font-size: 26px;
+    text-align: center;
+}
+.banner {
+    margin-bottom: 45px;
 }
