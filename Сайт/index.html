@@ -10,19 +10,28 @@
 <body>
     <header class="header">
         <div class="header__item_wrapper">
-            <div class="header__item">Акции</div>
-            <div class="header__item">Поиск</div>
-            <div class="header__item">Регистрация</div>
-            <div class="header__item">Личный кабинет</div>
+            <div class="header__item">
+                <a href="#">Акции</a>
+            </div>
+            <div class="header__item">
+                <a href="#">Поиск</a>
+            </div>
+            <div class="header__item">
+                <a href="#">Регистрация</a></div>
+            <div class="header__item">
+                <a href="#">Личный кабинет</a>
+            </div>
         </div>
-            <img class="header__item header__logo logo" src="images/logo.png" alt="logo">
+        <a href="index.html" class="logo">
+            <img class="header__logo" src="images/logo.png" alt="logo">
+        </a>
     </header>
 </body>
 <section class="banner"></section>
 <section class="principle">
     <span class="principle__title">Узнать приблизительную цену доставки</span>
-    <form action="principle__form">
-        <div class="principle__date principle__block">
+    <form action="post" class="principle__form" onsubmit="return false;">
+        <div class="principle__date principle__block ">
             <span class="principle__date__title principle__input__title">Дата</span>
             <input class="principle__input principle__date_input" type="text" name="principle__date" placeholder="дд.мм.гг">
         </div>
@@ -30,7 +39,125 @@
             <span class="principle__town__title principle__input__title">Город</span>
             <input class=" principle__input principle__town_input" type="text" name="principle__town" placeholder="Город">
         </div>
+        <div class="principle__block principle__submit">
+            <input type="submit" value="Посмотреть" class="principle__submit__btn">
+        </div>
+    </form>
+    <div class="principle__cost">
+        <div class="principle__cost__title">
+            <span>Стоимость</span>
+        </div>
+        <div class="principle__cost__line"></div>
+    </div>
+</section>
+<section class="reviews">
+    <span class="reviews__title">
+        Отзывы
+</span>
+<div class="reviews__items__wrapper">
+    <div class="reviews__item reviews__item__first">
+        <div class="reviews__item__content">
+            <div class= " reviews__item__photo reviews__item__photo__first"></div>
+            <span class="reviews__item__name">Бондаренко Руслан</span>
+        </div>
+        <ul class="reviews__text">
+            <li class="reviews__text__item">Отличная 
+                авиакомпания!</li>
+            <li class="reviews__text__item">Приятный сервис</li>
+            <li class="reviews__text__item">Дружелюбный персонал</li>
+        </ul>
+    </div>
+    <div class="reviews__item reviews__item__second">
+        <div class="reviews__item__content">
+            <div class=" reviews__item__photo reviews__item__photo__second"></div>
+            <span class="reviews__item__name">Уртаев Максим</span>
+        </div>
+        <ul class="reviews__text">
+            <li class="reviews__text__item">Отличная 
+                авиакомпания!</li>
+            <li class="reviews__text__item">Приятный сервис</li>
+            <li class="reviews__text__item">Дружелюбный персонал</li>
+        </ul>
+    </div>
+    <div class="reviews__item reviews__item__third">
+        <div class="reviews__item__content">
+            <div class="reviews__item__photo reviews__item__photo__third"></div>
+            <span class="reviews__item__name">Рубаев Давид</span>
+        </div>
+        <ul class="reviews__text">
+            <li class="reviews__text__item">Отличная 
+                авиакомпания!</li>
+            <li class="reviews__text__item">Приятный сервис</li>
+            <li class="reviews__text__item">Дружелюбный персонал</li>
+        </ul>
+    </div>
+</div>
+</section>
+<section class="search">
+    <span class="search__title">Поиск</span>
+    <div class="search__form">
+        <div class="search__path">
+            <input type="text" placeholder="Откуда" class="search__path__from search__input">
+            <div class="search__path__line"></div>
+            <input type="text" placeholder="Куда" class="search__path__to search__input">
+        </div>
+        <div class="search__end">
+            <input type="text" placeholder="Номер доставки" class="search__input">
+            <input type="submit" value="Найти" class="search__btn">
+        </div>
+    </div>
+</section>
+<section class="actions">
+    <span class="actions__title">Акции</span>
+    <div class="actions__wrapper">
+        <div class="action">
+            <div class="action__content">
+                <div class="action__image action__image__first"></div>
+                <span class="action__title">Заоблачные скидки</span>
+            </div>
+            <span class="action__text">
+                Даем скидку на<br>первый заказ до 25 %.
+            </span>
+        </div>
+        <div class="action">
+            <div class="action__content">
+                <div class="action__image action__image__second"></div>
+                <span class="action__title">Много на себя берем!</span>
+            </div>
+            <span class="action__text">
+                Даем скидку <br>на первый заказ до 25 %.
+            </span>
+        </div>
+        <div class="action">
+            <div class="action__content">
+                <div class="action__image action__image__third"></div>
+                <span class="action__title">Дальше едешь – меньше платишь</span>
+            </div>
+            <span class="action__text">
+                Скидка на заказ формируется<br>от удаленности пункта назначения.
+            </span>
+        </div>
+    </div>
+</section>
+<section class="closedAction">
+    <span class="closedAction__title">Хотите подписаться на закрытые акции?</span>
+    <form action="post" method="post" onsubmit="return false;" class="closedActionForm">
+        <input type="text" placeholder="Email" class="closedActionForm__input">
+        <input type="submit" value="Найти" class="closedActionForm__btn">
     </form>
 </section>
+<footer class="footer">
+    <div class="footer__info">
+        <span class="footer__info__text">+7(999) 999 99 99</span>
+        <span class="footer__info__text">mail@mail.mail</span>
+        <span class="footer__info__text">г. Владикавказ Проспект Мира 2</span>
+    </div>
+    <span class="footer__text">
+        Под международным брендом DPD в России работает компания АО «ДПД РУС» <br>107023, г. Москва, ул. Электрозаводская, д. 27, стр. 8, 4 этаж, помещение ХVI, комната<br>34Договор и Генеральные условия • Защита данных
+    </span>
+    <a href="index.html" class="logo">
+        <img class="footer__logo" src="images/logo.png" alt="logo">
+    </a>
+</footer>
 <script src="scripts.js"></script>
 </html>
