@@ -12,15 +12,17 @@ body {
 .header__item_wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 70px;
     padding-bottom: 0;
     padding-top: 0;
+    width: 100%;
 }
 .header__item a {
     color: #fefefe;
     text-decoration: none;
+    font-size: 30px;
 }
 .header__item a:hover {
     opacity: 0.6;
