@@ -1,10 +1,10 @@
-const body = document.querySelector('.banner')
+const banner = document.querySelector('.banner')
 function createSlider (id = 'slider') {
     const slides =  []
     const slider = document.createElement('div')
     slider.classList.add('slider')
     slider.id = id
-    body.append(slider)
+    banner.append(slider)
     const sliderInner = document.createElement('div')
     sliderInner.classList.add('slider__inner')
     slider.append(sliderInner)
